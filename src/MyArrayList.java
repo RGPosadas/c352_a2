@@ -1,5 +1,7 @@
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class MyArrayList<E> implements List<E> {
     private E obj;
@@ -21,15 +23,15 @@ public class MyArrayList<E> implements List<E> {
     }
 
     public boolean remove (Object o) {
-
+        return false;
     }
 
     public String toString() {
-
+        return "";
     }
 
     public int size() {
-        
+        return 0;
     }
 
     /////////////////////////////////////////////////
@@ -39,7 +41,7 @@ public class MyArrayList<E> implements List<E> {
         try {
             throw new UnsupportedOperationException();
         } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
         }
         return false;
     }
@@ -48,7 +50,7 @@ public class MyArrayList<E> implements List<E> {
         try {
             throw new UnsupportedOperationException();
         } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
         }
         return false;
     }
@@ -57,7 +59,7 @@ public class MyArrayList<E> implements List<E> {
        try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return false;
     }
@@ -66,7 +68,7 @@ public class MyArrayList<E> implements List<E> {
        try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return false;
     }
@@ -75,7 +77,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-           System.out.println(err);
+           err.printStackTrace();
        }
        return false;
     }
@@ -84,7 +86,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-           System.out.println(err);
+           err.printStackTrace();
        }
        return null;
     }
@@ -93,7 +95,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-           System.out.println(err);
+           err.printStackTrace();
        }
        return 0;
     }
@@ -102,7 +104,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-           System.out.println(err);
+           err.printStackTrace();
        }
        return 0;
     }
@@ -111,7 +113,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-           System.out.println(err);
+           err.printStackTrace();
        }
        return false;
     }
@@ -120,7 +122,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
@@ -129,7 +131,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return 0;
     }
@@ -138,7 +140,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
@@ -147,7 +149,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
@@ -156,7 +158,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return false;
     }
@@ -165,7 +167,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return false;
     }
@@ -174,7 +176,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
@@ -183,7 +185,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
@@ -192,7 +194,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
@@ -201,7 +203,7 @@ public class MyArrayList<E> implements List<E> {
         try {
            throw new UnsupportedOperationException();
        } catch (UnsupportedOperationException err) {
-            System.out.println(err);
+            err.printStackTrace();
        }
        return null;
     }
