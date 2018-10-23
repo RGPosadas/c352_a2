@@ -4,9 +4,32 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class MyArrayList<E> implements List<E> {
-    private E obj;
+    private int size;
+    private E[] dynamicArray;
 
+    /**
+     * Default constructor
+     */
+    public MyArrayList() {
+        dynamicArray = (E[]) new Object[10];
+        size = 0;
+    }
+
+    //Finds the first free empty spot
+    public int find() {
+        int index = -1;
+        for (int i = 0; i < size; i++) {
+            if (dynamicArray[i] != null)
+            index = i;
+        }
+        return index;
+    }
     public boolean add(E e) {
+        int addAt = this.find();
+        if (addAt == -1)
+            return false;
+        dynamicArray[addAt] = e;
+        size++;
         return true;
     }
 

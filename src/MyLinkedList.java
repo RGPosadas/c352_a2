@@ -144,26 +144,27 @@ public class MyLinkedList<E> implements List <E> {
      * A method that removes the first occurence of the specified element from the LL. Returns TRUE if successful
      */
     public boolean remove(Object o) {
-        // E obj = (E) o;
+        boolean flag = false;
+        E myObj = (E) o;
+        System.out.println(myObj + " " + myObj.getClass());
         if (head == null) {
             System.out.println("Cannot remove the element since the LinkedList is empty.");
-            return false;
+            return flag;
         }
-        else {
+        else { //if list is not empty
             Node current = head;
             int index = 0;
-            while (current.next != null && !current.element.equals(o)) {
+            while (current != null && !myObj.equals(current.element)) {
                 current = current.next;
                 index++;
             }
             //When you get here, either current has iterated through the LL and did not find the element (current == null)
             //OR current has iterated through the LL and found the element
-            if (current == null)
-                return false;
-            else {
+            if (current != null) {
                 this.remove(index);
-                return true;
+                flag = true;
             }
+            return flag;
         }
     }
 
