@@ -57,14 +57,29 @@ public class MyLinkedList<E> implements List <E> {
      * @param e An element of type E
      */
     public void add(int index, E e) {
-        if (index >= size) //if index does not exist
+        if (index == 0 && size() == 0) {  //if index is first BUT wants to add to first, then simply add to beginning
+            // System.out.println("Adding to start of LL since LL is empty.");
+            add(e);
+        }
+        else if (index == 0) { //if index is 0 and list is NOT EMPTY
+            // System.out.println("Adding to start of LL and LL is NOT empty.");
+            Node newNode = new Node(e);
+            Node keep = head;
+            head = newNode;
+            head.next = keep;
+            keep.prev = head;
+            keep = null;
+        }
+        else if (index > size) //if index does not exist
             System.out.println("Invalid index. Cannot add Node to an index that does not exist.");
         else { //if index is valid
+            // System.out.println("Adding to middle of LL");
             Node current = head;
             int listIndex = 0;
+            outerloop:
             while (current != null) { //find the index you want to be at
                 if (listIndex == index)
-                    break;
+                    break outerloop;
                 current = current.next;
                 listIndex++;
             }
@@ -72,12 +87,9 @@ public class MyLinkedList<E> implements List <E> {
             newNode.next = current;
             newNode.prev = current.prev;
             current.prev = newNode;
-            if (index != 0) //if you're not adding the Element to be the new head
-                current.prev.prev.next = newNode;
-            if (index == 0) //if at index 0, you want it to be at head
-                head = newNode;
+            current.prev.prev.next = newNode;
             current = null;
-            }
+        }
     }
     
     /**
@@ -146,7 +158,7 @@ public class MyLinkedList<E> implements List <E> {
     public boolean remove(Object o) {
         boolean flag = false;
         E myObj = (E) o;
-        System.out.println(myObj + " " + myObj.getClass());
+        // System.out.println(myObj + " " + myObj.getClass());
         if (head == null) {
             System.out.println("Cannot remove the element since the LinkedList is empty.");
             return flag;
@@ -164,6 +176,9 @@ public class MyLinkedList<E> implements List <E> {
                 this.remove(index);
                 flag = true;
             }
+            else{
+                // System.out.println("Cannot remove Object since it does not exist.");
+            }
             return flag;
         }
     }
@@ -175,7 +190,14 @@ public class MyLinkedList<E> implements List <E> {
         if (head == null)
             return "This LinkedList is empty."; 
         else {
-            return "This LinkedList is of size " + size + ". The head is LinkedList[0]: " + head.element + ", and the tail is LinkedList[" + (size-1) + "]: " + tail.element;
+            String s = "MyLinkedList:[ ";
+            Node t = head;
+            while (t != null) {
+                s += t.element + " ";
+                t = t.next;
+            }
+            s += "]";
+            return s; 
         }
     }
 

@@ -1,0 +1,108 @@
+N = 10        | Insert@start(ns) | Insert@end(ns) | Insert@random(ns)
+
+MyArrayList   | 9817             | 27563          | 6419        
+
+ArrayList     | 10950            | 8684           | 6796        
+
+MyLinkedList  | 11328            | 449699         | 9439        
+
+LinkedList    | 11328            | 70985          | 57392       
+
+
+
+N = 10        | Remove@start(ns) | Remove@end(ns) | Remove@random(ns) | Remove byvalue(ns)
+
+MyArrayList   | 2266             | 6041           | 4153              | 14725        
+
+ArrayList     | 1888             | 4908           | 4154              | 18124        
+
+MyLinkedList  | 3020             | 9440           | 32095             | 19634        
+
+LinkedList    | 1888             | 13970          | 29829             | 45309        
+
+
+
+============================================================================================
+
+
+N = 100       | Insert@start(ns) | Insert@end(ns) | Insert@random(ns)
+
+MyArrayList   | 159339           | 34360          | 118183      
+
+ArrayList     | 46065            | 57015          | 52107       
+
+MyLinkedList  | 43422            | 50219          | 218997      
+
+LinkedList    | 33982            | 20012          | 71362       
+
+
+
+N = 100       | Remove@start(ns) | Remove@end(ns) | Remove@random(ns) | Remove byvalue(ns)
+
+MyArrayList   | 120448           | 15481          | 75893             | 316413       
+
+ArrayList     | 38513            | 21900          | 67964             | 348508       
+
+MyLinkedList  | 24542            | 44555          | 71363             | 354548       
+
+LinkedList    | 18124            | 29829          | 39646             | 140083       
+
+
+
+============================================================================================
+
+
+N = 1000      | Insert@start(ns) | Insert@end(ns) | Insert@random(ns)
+
+MyArrayList   | 4635185          | 144991         | 1130856     
+
+ArrayList     | 756673           | 90242          | 248449      
+
+MyLinkedList  | 419492           | 385510         | 2061970     
+
+LinkedList    | 427422           | 299800         | 1145581     
+
+
+
+N = 1000      | Remove@start(ns) | Remove@end(ns) | Remove@random(ns) | Remove byvalue(ns)
+
+MyArrayList   | 2184683          | 103080         | 240897            | 5242336      
+
+ArrayList     | 129133           | 177085         | 152543            | 7705297      
+
+MyLinkedList  | 198608           | 281675         | 1665133           | 9351927      
+
+LinkedList    | 87222            | 382489         | 726843            | 6552541      
+
+
+
+============================================================================================
+
+
+N = 10000     | Insert@start(ns) | Insert@end(ns) | Insert@random(ns)
+
+MyArrayList   | 48075130         | 1146714        | 19246439    
+
+ArrayList     | 5778500          | 1161062        | 3783739     
+
+MyLinkedList  | 804248           | 1261121        | 167788711   
+
+LinkedList    | 993038           | 637734         | 68638193    
+
+
+
+N = 10000     | Remove@start(ns) | Remove@end(ns) | Remove@random(ns) | Remove byvalue(ns)
+
+MyArrayList   | 35823758         | 557687         | 21248373          | 66783515     
+
+ArrayList     | 4213049          | 641888         | 3826407           | 59040460     
+
+MyLinkedList  | 189545           | 549381         | 206245342         | 289751167    
+
+LinkedList    | 299044           | 443658         | 105594317         | 243445382    
+
+
+
+============================================================================================
+
+

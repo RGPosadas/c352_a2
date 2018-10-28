@@ -5,3 +5,7 @@ COMP352_A2_40057013.docx
 .project
 bin/
 .vscode
+*.pdf
+*.zip
+BubbleSort.java
+a2_40057013
